@@ -1,0 +1,49 @@
+console.log("hello world")
+    //variable-it's a memory location
+// let -
+//const - this is used for values that cannot be changed
+
+let city = "Nairobi"
+console.log(city)
+
+const id=25486798
+console.log(id)
+
+//data Types
+
+//String.A collection of characters(a-z)nb we use ""
+let school="Letscode"
+console.log(school)
+
+//Number.numerical values
+let price=1000
+console.log(price)
+
+//Boolean -true or false
+let isAdult=true
+console.log(isAdult)
+
+let isAdmin=false
+console.log(isAdmin)
+
+//Array .a list of items
+let fruits=("apple","banana","mango")
+console.log(fruits)
+
+let marks=(20,50,68,89,45)
+console.log(marks)
+
+//object-contains key value pair
+let student={
+    name:"James",
+    age:27,
+    location:"kikuyu"
+}
+console.log(student)
+
+let car={
+    brand:"Toyota",
+    model:"96 series)",
+    year:"2020"
+}
+console.log(car)
