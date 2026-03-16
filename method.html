@@ -43,14 +43,53 @@
         console.log(products)
 
        //.shift-removes the first item from the Array
-        products.shifts()
+        products.shift()
         console.log(products)
 
-        //includes()-checks if an array contains a value
+        //.includes()-checks if an array contains a value
         console.log(products.includes("phone"))
 
-        //length-returns the number of the items in an array
+        //.length-returns the number of the items in an array
         console.log(products.length)
+
+        //indexing-allows you to access specific elements by its position
+        // indexing starts from 0 in javascript
+        let students=["Mary","John","Brian","Grace"]
+        console.log(students)
+        console.log(students[0])
+        console.log(students[1])
+        console.log(students[2])
+        console.log(students[3])
+        console.log(students[5])
+
+        //changing an element using indexing
+        students[1]="Daniel"
+        console.log(students)
+
+        let language="JavaScript"
+        console.log(language)
+        console.log(language[4])
+
+        //objects
+        //indexing in objects
+        let employee={
+            name:"Sarah",
+            position:"Developer",
+            salary:50000
+        }
+        console.log(employee)
+        console.log(employee.name)
+        console.log(employee.salary)
+
+        //object methods
+        //object.keys()-returns an array of keys
+        console.log(Object.keys(employee))
+
+        //Object.values()-returns an array of values
+        console.log(Object.values(employee))
+
+        //Object.entries()-returns an array of key-value pairs
+        console.log(Object.entries(employee))
     </script>
 </body>
 </html>
