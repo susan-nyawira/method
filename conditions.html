@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //conditional statements are used to make decisions in code based on conditions
+
+        //if statement-runs only if the condition is true
+        let age=19
+        if(age>=18){
+            console.log("You're an adult")
+        }
+
+        //else statement-runs only if the condition is false
+        let citizenAge=17
+        if(citizenAge>=18){
+            console.log("You can vote, you're an adult")
+        }else{
+            console.log("You can't vote, you're a minor")
+        }
+
+        //else if -they allow us to check multiple conditions
+        let score=75
+        if(score >=80){
+            console.log("Grade A")
+        }else if(score >=70){
+            console.log("Grade B")
+        }else if(score >=60){
+            console.log("Grade C")
+        }else if(score >=50){
+            console.log("Grade D")
+        }else{
+            console.log("Fail")
+        }
+
+        //switch statement-used when checking specific values
+        let amount=800
+        switch(amount){
+            case 500:
+                console.log("Small pizza")
+                break
+            case 800:
+                console.log("Medium pizza")
+                break
+            case 1200:
+                console.log("Large pizza")
+                break
+            default:
+                console.log("Sorry we only offer small, medium and large pizza")
+        }
+
+    </script>
+</body>
+</html>
