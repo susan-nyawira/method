@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //synchronous-code runs line by line, each line waits for the previous one
+        //asynchronous-code runs in the background, does not block other codes
+        //setTimeout()-runs the code after a delay
+        console.log("start")
+
+        setTimeout(()=>{
+            console.log("This will run after 10 seconds")
+        },10000)
+
+        console.log("end")
+
+        console.log("student opens portal")
+        setTimeout(()=>{
+            console.log("results are ready")
+        },5000)
+
+        console.log("checking progress....results will be ready soon")
+
+
+    </script>
+</body>
+</html>

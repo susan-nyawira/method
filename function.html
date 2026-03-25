@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //A function is ablock of codes designed to perform a specific task
+        //A function cannot run unless it's called
+        function greet(){
+            console.log("Hello")
+        }
+        greet()
+
+        //functions with parameters-variables
+        function greetUser(name){
+            console.log("Hello "+name)
+        }
+        //arguement-This is the exact value passed inside a function
+        greetUser("John")
+        greetUser("mary")
+        greetUser("mike")
+
+        function add(x,y,z){
+            console.log(x+y+z)
+        }
+        add(5,10,70)
+        add(10,40,60)
+
+        //function with return values
+        function totalPrice(price,quantity){
+            return price*quantity
+        }
+        let amount=totalPrice(1000,6)
+        console.log(amount)
+
+        function area(length,width){
+            return length*width
+        }
+        let results=area(20,65)
+        console.log(results)
+
+        //functions with conditional statement
+        function checkAge(age){
+            if(age>=18){
+                console.log("you are an adult")
+            }else{
+                console.log("you are a minor")
+            }
+        }
+        checkAge(20)
+        checkAge(15)
+
+        //function with default parameter
+        function greetings(name="Guest"){
+            console.log("Hello "+name)
+        }
+        greetings()
+        greetings("Susan")
+
+        //Arrow functions-can be used/nested inside other functions
+        const sayHello=(user)=>{
+            console.log("Hello "+user)
+        }
+        sayHello("Lucy")
+
+        const multiply=(x,y)=>{
+            console.log(x*y)
+        }
+        multiply(40,8)
+
+        const checkScore=(score)=>{
+            if(score>=50){
+                console.log("pass")
+            }else{
+                console.log("fail")
+            }
+        }
+        checkScore(67)
+        checkScore(45)
+
+        //callbacks-its a function passed into another and runs after something happens
+        function greetCustomer(name,callback){
+            console.log("hello "+name)
+            callback()
+        }
+        greetCustomer("Mark",()=>{
+            console.log("Welcome to our site")
+            
+        })
+        function processPayment(callback){
+            console.log("processing payment.....")
+            callback()
+        }
+        processPayment(()=>{
+            console.log("Payment successful")
+        })
+
+        //scope
+        //Global vs Local variables
+        //Global variable can be used everywhere.
+        //global function is defined outside a function and can be used in as many functions as you want
+        //local variable can only be used inside a function
+        let globalvar="I am global"
+
+        function test(){
+            let localvar="I am local"
+            console.log(localvar)
+            console.log(globalvar)
+        }
+    
+
+        test()
+    </script>
+    
+</body>
+</html>
