@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //.map()-used to transform every item in an array into something new
+        let numbers=[1,2,3,4,5]
+        let doubled=numbers.map((num)=>{
+            return num*2
+        })
+        console.log(doubled)
+
+        let names=["ann","brian","chris"]
+        let upperNames=names.map((name)=>{
+            return name.toUpperCase()
+        })
+        console.log(upperNames)
+
+        //.filter-used to select items that meets a condition
+        let marks=[40,56,34,70,85]
+        let passedstudents=marks.filter((mark)=>{
+            return mark>=50
+        })
+        console.log(passedstudents)
+
+        let fruits=["apple","banana","avocado","orange"]
+        let aFruits=fruits.filter((fruit)=>{
+            return fruit.startsWith("a")
+        })
+        console.log(aFruits)
+
+        //.find()-used to get the first item that matches a condition
+        let scores=[5,10,12,50,70]
+        let result=scores.find((score)=>{
+            return score>10
+        })
+        console.log(result)
+
+        let students=["Ann","Brian","Chris"]
+        let studentLength=students.find((student)=>{
+            return student.length>4
+        })
+        console.log(studentLength)
+    </script>
+</body>
+</html>
