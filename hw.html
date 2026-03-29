@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //function is a block of codes designed to perform a specific task
+        //a function cannot run unless its called
+        function sayHi(){
+            console.log("Hi there")
+        }
+        sayHi()
+
+        //function with parameters-variables
+        function welcomeUser(name){
+            console.log("welcome"+name)
+        }
+
+        //arguement-exact value passed inside a function
+
+        welcomeUser("Grace")
+        welcomeUser("Faith")
+        welcomeUser("Joy")
+
+        function add(x,y,z){
+            console.log(x+y+z)
+        }
+        add[25+19+16]
+        add[10+20+30]
+
+        //function with return value
+        function totalSum(price,quantity){
+            return price*quantity
+        }
+        let amount=totalSum(200,50)
+        console.log(amount)
+
+        function calculateBMI(weight,height){
+            return weight*height
+        }
+        let results=calculateBMI(70,5)
+        console.log(results)
+
+        function square(){
+            console.log("num*num")
+        }
+        square()
+
+        const checkMarks=(marks)=>{
+            if(marks>=50){
+                console.log("pass")
+            }else{
+                console.log("fail")
+            }
+        }
+        checkMarks(80)
+        checkMarks(40)
+
+        //function callback-function passed into another and runs after something happens
+        function orderFood(food, callback){
+            console.log("Ordering[food]")
+        }
+         orderFood(()=>{
+            console.log("Food delivered")
+         })
+
+         console.log("Start")
+
+        setTimeout(()=>{
+            console.log("Loading complete")
+        },3000)
+        console.log("End")
+
+        //promise
+        
+        const checkPayment=new Promise((resolve,reject)=>{
+            const success=true;
+            if(success){
+                resolve("payment successful")
+            }else{
+                reject("payment failed")
+            }
+        })
+        checkPayment
+        .then((message)=>console.log(message))
+        .catch((error)=>console.log(error))
+
+        //.map
+        let prices=[100,200,300,400]
+        let trippled=prices.map((pri)=>{
+            return pri*3
+        })
+        console.log(trippled)
+
+        //.filter
+        let age=[12,18,25,16,30]
+        let girls=age.filter((age)=>{
+            return age>=18
+        })
+        console.log(girls)
+
+        //.find()
+        let scores=[45,67,89,32,76]
+        let result=scores.find((score)=>{
+            return score>70
+        })
+        console.log(result)
+    </script>
+</body>
+</html>
